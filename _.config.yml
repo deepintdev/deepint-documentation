@@ -1,0 +1,13 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - API-OAUTH.md
+  - API.md
+  - DASHBOARDS.md
+  - EXTERNAL-SOURCES.md
+  - IFRAME-TOKENS.md
+  - SOURCES.md
