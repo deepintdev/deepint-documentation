@@ -50,7 +50,7 @@ A single condition has 3 properties:
 
  - `left` - Index of the feature to compare
  - `operation` - Condition type
- - `right` - Value to compare, if applicable. For dates, encode them in ISO format.
+ - `right` - Value to compare, if applicable. For dates, encode them in ISO format. Note: If a condition provides right as a null value and the operation is not `null`, the condition is ignored.
 
 Condition types:
 
@@ -69,7 +69,7 @@ Condition types:
 | `cn` | Checks if the feature contains an string.   | ``{"type":"one","left":0,"operation":"cn","right":"string"}`` |
 | `cni` | Checks if the feature contains an string. (Ignore case)   | ``{"type":"one","left":0,"operation":"cni","right":"string"}`` |
 | `ltd` | For date features, checks the date is before NOW + the provided duration.  | ``{"type":"one","left":4,"operation":"ltd","right":"1m"}`` |
-| `gtd` | For date features, checks the date is after NOW - the provided duration.  | ``{"type":"one","left":4,"operation":"gtd","right":"setosa"}`` |
+| `gtd` | For date features, checks the date is after NOW - the provided duration.  | ``{"type":"one","left":4,"operation":"gtd","right":"1m"}`` |
 
 For durations in `ltd` and `gtd`, you can sewt the value followed by the time unit:
 
