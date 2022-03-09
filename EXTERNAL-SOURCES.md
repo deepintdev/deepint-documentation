@@ -1,6 +1,6 @@
 # External data sources
 
-External data sources are an alternative to regular data sources when you want to manage the date yourself.
+External data sources are an alternative to regular data sources when you want to manage the data yourself.
 
 Deep Intelligence will fetch the data from an API you must provide.
 
@@ -269,7 +269,7 @@ You can change the data internally when using external sources. However, there a
  - The cache
  - The alerts
 
-In order to invalidate the cache and trigguer alerts, you have to use the external source updating endpoint:
+In order to invalidate the cache and trigger alerts, you have to use the external source updating endpoint:
 
  - [https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_external_source_update](https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_external_source_update)
 
