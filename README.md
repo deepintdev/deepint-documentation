@@ -10,3 +10,4 @@ This repository contains development documentation for Deep Intelligence. Check 
  - [External data sources](./EXTERNAL-SOURCES.md)
  - [Dashboard data structure](./DASHBOARDS.md)
  - [Using iframe tokens for dashboards or visualizations](./IFRAME-TOKENS.md)
+ - [Custom visualizations](./CUSTOM-VIEW.md)
