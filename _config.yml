@@ -1,1 +1,19 @@
-theme: jekyll-theme-midnight
+title: "Deep Intelligence Documentation"
+description: "Development documentation articles for Deep Intelligence"
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - API-OAUTH.md
+  - API.md
+  - DASHBOARDS.md
+  - EXTERNAL-SOURCES.md
+  - IFRAME-TOKENS.md
+  - SOURCES.md
+  - CUSTOM-VIEW.md
+show_downloads: false
