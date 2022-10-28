@@ -33,15 +33,15 @@ Example:
 
 Variables are used to store values in order to use in filters.
 
-Each variable is en object with the followinbg properties:
+Each variable is en object with the following properties:
 
 | Property | Type | Description |
 |---|---|---|
 | `name` | string | Variable name. You use this name to reference it, so it should be unique. |
-| `type` | string | Varibale type. The same types as data source feature types: `nominal`, `text`, `numeric`, `logic` or `date` |
+| `type` | string | Variable type. The same types as data source feature types: `nominal`, `text`, `numeric`, `logic` or `date` |
 | `inputType` | string | Determines if it's a variable the user provides (`input`) or it's computed from the values of other variables (`computed`) |
 | `defaultValue` | string | Default value for the variable. |
-| `expression` | string | Expression to compute the varible. Only if `inputType` = `computed`. Example: `(var1 + var2) / var3` |
+| `expression` | string | Expression to compute the variable. Only if `inputType` = `computed`. Example: `(var1 + var2) / var3` |
 
 Example:
 
@@ -77,7 +77,7 @@ Each filter has the following properties:
 |---|---|---|
 | `source` | string | ID of the data source to filter. |
 | `source_name` | string | Optional. Name of the source to display when modifying the dashboard. |
-| `fields` | Array | Array of fields the source had when the filter was created. This is used in order to automatically modify it when you chgange the source features order. |
+| `fields` | Array | Array of fields the source had when the filter was created. This is used in order to automatically modify it when you change the source features order. |
 | `root` | Object | Data filter tree |
 
 Example:
@@ -102,7 +102,7 @@ Example:
 }
 ```
 
-You can add varibles to the filter nodes, in order to do it, add the `rightType` property set to `var` and `rightName` set to the variable name:
+You can add variables to the filter nodes, in order to do it, add the `rightType` property set to `var` and `rightName` set to the variable name:
 
 ```json
 {

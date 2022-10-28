@@ -38,7 +38,7 @@ After the document is ready, you can read any parameters given by the user with 
 Then, you must call **DeepIntelligence.fetchData(projection, callback)**. 
  - The first parameter it takes is an array of the features indexes you want to get. For example, if you render an XY chart, you may need only the features mapped to the X and Y axis.
  - The second parameter is the callback. It receives a total of 4 parameters:
-   - **error** - An instance of Error class, only if the request failed. If the request succedeed, error is set to null.
+   - **error** - An instance of Error class, only if the request failed. If the request succeeded, error is set to null.
    - **features** - An array of features definitions. Each feature has `name` and `type` values.
    - **instances** - The data for the visualization, as a two-dimensional matrix.
    - **projection** - The applied projection. It is equals to the provided projection unless the projection is invalid.

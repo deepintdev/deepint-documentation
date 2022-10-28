@@ -10,14 +10,14 @@ Advantages:
  - Self hosted and self stored data.
  - Fully customizable. You can use any internal storage system and you can restrict the data access of your API.
 
-Disadavantages:
+Disadvantages:
 
  - You have to provide your own infrastructure.
  - Data updating features are disabled.
 
 ## How to host an external source
 
-In order to host an external source you need to provide an API with at lesat these endpoints:
+In order to host an external source you need to provide an API with at least these endpoints:
 
 ### Handshake endpoint
 
@@ -49,9 +49,9 @@ Example response:
 | Header: `x-secret-key` | Source secret key (an arbitrary string) |
 | Expected Response | The expected response if the authentication details are correct is **200 OK** with a JSON body including the source metadata. |
 
-This enpoint is used to get the source metadata.
+This endpoint is used to get the source metadata.
 
-The metaddata consists of the following fields:
+The metadata consists of the following fields:
 
  - `id` - Identifier of the source. Usually the public key.
  - `features` - Array of features, For each including the `index` and the `type`. Available types are: `NOMINAL`, `TEXT`, `NUMERIC`, `LOGIC` and `DATE`.
@@ -104,7 +104,7 @@ The request body consists of the following fields:
 
  - `filter` - Data filter. See [Sources filtering](./SOURCES.md#api-filtering).
  - `projection` - List of features (indexes) to return, split by commas. Example: `0,1,2`
- - `order` - Index of the feature to order by. Set to `-1` to use defaul order.
+ - `order` - Index of the feature to order by. Set to `-1` to use default order.
  - `dir` - Can be `asc` (Ascendant) or `desc` (descendant), for the order direction.
  - `skip` - Number of rows to skip. Set to `-1` to ignore.
  - `limit` - Max number of rows to return. Set to `-1` for no limit.
@@ -185,7 +185,7 @@ Example response:
 | Path | `/source/count` |
 | Header: `x-public-key` | Source public key (an arbitrary string) |
 | Header: `x-secret-key` | Source secret key (an arbitrary string) |
-| Expected Response | The expected response if the authentication details are correct is **200 OK** with a JSON body including the number of extected instances. |
+| Expected Response | The expected response if the authentication details are correct is **200 OK** with a JSON body including the number of expected instances. |
 
 This endpoint is used to count instances.
 
@@ -275,7 +275,7 @@ In order to invalidate the cache and trigger alerts, you have to use the externa
 
 Calling this endpoint will invalidate the cache and trigger alerts using the instances you provided in the request.
 
-Note: the enpoint only accepts 100 instances for each request, so if you have more you need to split the instances in multiple requests.
+Note: the endpoint only accepts 100 instances for each request, so if you have more you need to split the instances in multiple requests.
 
 ## Example implementations
 

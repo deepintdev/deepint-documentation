@@ -1,6 +1,6 @@
 # Deep Intelligence documentation
 
-This repository contains development documentation for Deep Intelligence. Check the section below for the list of docummented topics.
+This repository contains development documentation for Deep Intelligence. Check the section below for the list of documented topics.
 
 ## Topics
 

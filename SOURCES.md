@@ -14,7 +14,7 @@ Available data types are the following:
 
  - **Nominal**: Represents a string from 0 to 255 characters. It's used to represent categories.
  - **Text**: Represents a long string. Used to store messages, paragraphs or other texts.
- - **Numeric**: Represents a numeric value, either an interger or a real number.
+ - **Numeric**: Represents a numeric value, either an integer or a real number.
  - **Logic**: Represents a boolean value. It can be `True` or `False`
  - **Date**: Represents a date or time. By default it's managed in ISO format. However you can change it in case your original data source was encoded with other format. When doing that, use the [MomentJS date formats](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/)
 
@@ -34,7 +34,7 @@ When doing it, the system will automatically create tasks to fetch the new versi
 
 ## Updating via API
 
-The preferred method for updating your sources is using the API, since it's the most secure way of autoatically transfering your data to Deep Intelligence.
+The preferred method for updating your sources is using the API, since it's the most secure way of automatically transferring your data to Deep Intelligence.
 
 You can update any source by using the instances API:
 
@@ -71,7 +71,7 @@ Condition types:
 | `ltd` | For date features, checks the date is before NOW + the provided duration.  | ``{"type":"one","left":4,"operation":"ltd","right":"1m"}`` |
 | `gtd` | For date features, checks the date is after NOW - the provided duration.  | ``{"type":"one","left":4,"operation":"gtd","right":"1m"}`` |
 
-For durations in `ltd` and `gtd`, you can sewt the value followed by the time unit:
+For durations in `ltd` and `gtd`, you can send the value followed by the time unit:
 
 ```js
 var ns = parse('1ns') // => 1 / 1e6
@@ -103,15 +103,15 @@ Types of group nodes:
 |---|---|
 | `allof` | The condition is true if all of the children conditions are true. If the children array is empty, the condition is always true |
 | `anyof` | The condition is true if any of the children conditions is true. If the children array is empty, the condition is always true. |
-| `not` |  The condition is trueif all of the children conditions are false. If the children array is empty, the condition is always true. |
+| `not` |  The condition is true if all of the children conditions are false. If the children array is empty, the condition is always true. |
 
 ## Derived sources
 
 You can create derived sources from existing sources, using a filter or another operation.
 
-Derived sources are stored and indexed idependently of the parent source, so they will require a task to be updated and also they increse your workspace size.
+Derived sources are stored and indexed independently of the parent source, so they will require a task to be updated and also they increase your workspace size.
 
-Currently there are several types of deribed sources:
+Currently there are several types of derived sources:
 
  - **Filter**: Applies a filter and projection to an existing data source.
  - **Join**: Joins two sources. Note: this operation takes a lot fo time for big sources.
