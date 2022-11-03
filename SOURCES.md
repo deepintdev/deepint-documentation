@@ -16,8 +16,7 @@ Available data types are the following:
  - **Text**: Represents a long string. Used to store messages, paragraphs or other texts.
  - **Numeric**: Represents a numeric value, either an integer or a real number.
  - **Logic**: Represents a boolean value. It can be `True` or `False`
- - **Date**: Represents a date or time. By default it's managed in ISO format. However you can change it in case your original data source was encoded with other format. When doing that, use the [MomentJS date formats](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/)
-
+ - **Date**: Represents a date or time. By default it's managed in ISO format. However you can change it in case your original data source was encoded with other format. When doing that, use the [Date formatting specification](./DATE-FORMATS.md).
 ## Indexed features
 
 Each feature can be indexed. When indexed, the source size may increase, but the query performance when filtering or sorting by an indexed feature is much better when the number of rows increases a lot.

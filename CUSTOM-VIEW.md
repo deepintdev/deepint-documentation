@@ -100,3 +100,44 @@ Example response with example data:
     ]
 }
 ```
+
+## Receiving real time data
+
+For real time data sources, when enabling the real time feature, you can receive instances in real time via the [DOM messages API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
+
+In order to receive them, register an event listener for the `message` events and filter them by origin and type.
+
+The real time messages are objects received from the origin `https://app.deepint.net` and with a property `type` with the value `real-time-data`. The actual instances are stored in the property `data`.
+
+Example message: 
+
+```json
+{
+    "type": "real-time-data",
+    "data": [
+        ["2022-11-03T14:10:30.007Z", 0.1, "Example nominal val 1", 5, true, 7],
+        ["2022-11-03T14:10:29.007Z", 0.2, "Example nominal val 1", 8, false, 9],
+        ["2022-11-03T14:10:28.007Z", 0.3, "Example nominal val 1", 1, true, 3]
+    ]
+}
+```
+
+Note: The instances are not projected, you will receive all the data source fields in order.
+
+Example of event listener:
+
+```js
+window.addEventListener("message", (event) => {
+    if (event.origin !== "https://app.deepint.net") {
+        return; // Not from Deep Intelligence
+    }
+
+    const message = event.data;
+
+    if (message.type !== "real-time-data") {
+        return; // Not a real time data update
+    }
+    
+    doSomethingWithTheData(message.data);
+}, false);
+```
