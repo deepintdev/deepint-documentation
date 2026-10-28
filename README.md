@@ -1,10 +1,12 @@
-# Deep Intelligence documentation
+# AIR-Core documentation
 
-This repository contains development documentation for Deep Intelligence. Check the section below for the list of documented topics.
+AIR-Core was formerly called Deep Intelligence (deepint.net).
+
+This repository contains development documentation for AIR-Core. Check the section below for the list of documented topics.
 
 ## Topics
 
- - [Deep Intelligence REST API](./API.md)
+ - [AIR-Core REST API](./API.md)
  - [OAUTH 2.0 authentication for API](./API-OAUTH.md)
  - [Data Sources](./SOURCES.md)
  - [Date formatting](./DATE-FORMATS.md)

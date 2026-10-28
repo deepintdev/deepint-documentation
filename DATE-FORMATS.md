@@ -1,6 +1,6 @@
 # Date formatting
 
-For any API calls and by default, Deep Intelligence uses the [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) standard format for dates.
+For any API calls and by default, AIR-Core uses the [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) standard format for dates.
 
 For visualizations and source file parsing, you will be able to provide a custom format for dates. In this case, you have to input a text including the wildcards that will be replaced by the date and time components.
 

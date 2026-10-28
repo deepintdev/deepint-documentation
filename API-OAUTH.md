@@ -1,8 +1,8 @@
 # OAUTH 2.0 authentication for API
 
-In order to access Deep Intelligence API you need an authorization token. You can obtain one manually from your [Account settings](https://app.deepint.net/o/none?ws=&s=account) or you can create one for an external user using OAuth 2.0.
+In order to access AIR-Core API you need an authorization token. You can obtain one manually from your [Account settings](https://app.air-core.io/o/none?ws=&s=account) or you can create one for an external user using OAuth 2.0.
 
-The first step is to create a new application. You can do it in your [Account settings](https://app.deepint.net/workspace?ws=&s=account).  You must set:
+The first step is to create a new application. You can do it in your [Account settings](https://app.air-core.io/workspace?ws=&s=account).  You must set:
  - The application name.
  - The callback URL. When the user authorizes your application or denies it, they will be redirected to the provided URL.
  - The permission level you want to request to the users.
@@ -18,7 +18,7 @@ If the user authorizes your application, they will be redirected to the callback
 
 If the user denies the access, they will be redirected to the callback URL, without any extra parameters.
 
-With the bearer token, send a *POST* request to `https://app.deepint.net/api/oauth/login` with the following parameters:
+With the bearer token, send a *POST* request to `https://app.air-core.io/api/oauth/login` with the following parameters:
 - `client_id` - The client ID of your application
 - `client_secret` - The client secret of your application.
 - `bearer` - The received bearer token
@@ -31,4 +31,4 @@ The request will end with STATUS = 200 if the bearer is valid, and you will be p
 
 With the authentication token now you can access the API:
 
- - [https://app.deepint.net/api/v1/documentation/](https://app.deepint.net/api/v1/documentation/)
+ - [https://app.air-core.io/api/v1/documentation/](https://app.air-core.io/api/v1/documentation/)
