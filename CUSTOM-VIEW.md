@@ -127,8 +127,12 @@ Note: The instances are not projected, you will receive all the data source fiel
 Example of event listener:
 
 ```js
+// Instances allowed to send messages to the view. app.deepint.net is the former domain of AIR-Core,
+// kept while dashboards are still opened there.
+const ALLOWED_ORIGINS = ["https://app.air-core.io", "https://app.deepint.net"];
+
 window.addEventListener("message", (event) => {
-    if (event.origin !== "https://app.air-core.io") {
+    if (!ALLOWED_ORIGINS.includes(event.origin)) {
         return; // Not from AIR-Core
     }
 
