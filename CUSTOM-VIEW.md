@@ -107,7 +107,7 @@ For real time data sources, when enabling the real time feature, you can receive
 
 In order to receive them, register an event listener for the `message` events and filter them by origin and type.
 
-The real time messages are objects received from the origin `https://app.air-core.io` and with a property `type` with the value `real-time-data`. The actual instances are stored in the property `data`.
+The real time messages are objects received from the origin of the instance (`https://app.air-core.io`, or `https://app.deepint.net` for dashboards still opened on the former domain) and with a property `type` with the value `real-time-data`. The actual instances are stored in the property `data`.
 
 Example message: 
 

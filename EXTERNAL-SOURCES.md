@@ -259,7 +259,7 @@ Note: You should limit the amount of values returned, for example, to 100, in or
 In order to link the external source you have to provide an URL containing the host, port, public key and secret key. Example:
 
 ```
-https://example.sources.deepint.net/?pub=public-key&secret=secret-key
+https://sources.example.com/?pub=public-key&secret=secret-key
 ```
 
 ## Update the source
