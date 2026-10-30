@@ -6,18 +6,18 @@ First, you need to set up the workspace secret. This secret is used to sign the 
 
 In order to change the workspace secret, use the workspace modification API:
 
- - [https://app.deepint.net/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId_](https://app.deepint.net/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId_)
+ - [https://app.air-core.io/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId_](https://app.air-core.io/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId_)
 
 In order to create the token, use the iframe API:
 
- - [https://app.deepint.net/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId__iframe](https://app.deepint.net/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId__iframe)
+ - [https://app.air-core.io/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId__iframe](https://app.air-core.io/api/v1/documentation/#/workspaces/post_api_v1_workspace__workspaceId__iframe)
 
 When creating the token, you can set a list of filters to apply, in order to restrict the data.
 
 The URL you will get will be like this:
 
 ```
-https://app.deepint.net/iframe/workspace-id?token=TOKEN
+https://app.air-core.io/iframe/workspace-id?token=TOKEN
 ```
 
 You can add extra params to the URL to customize the style:

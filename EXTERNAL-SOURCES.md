@@ -2,7 +2,7 @@
 
 External data sources are an alternative to regular data sources when you want to manage the data yourself.
 
-Deep Intelligence will fetch the data from an API you must provide.
+AIR-Core will fetch the data from an API you must provide.
 
 Advantages:
 
@@ -254,12 +254,12 @@ The response must be an array with the list of available values:
 
 Note: You should limit the amount of values returned, for example, to 100, in order to speed up the requests.
 
-## Link an external source to Deep Intelligence
+## Link an external source to AIR-Core
 
 In order to link the external source you have to provide an URL containing the host, port, public key and secret key. Example:
 
 ```
-https://example.sources.deepint.net/?pub=public-key&secret=secret-key
+https://sources.example.com/?pub=public-key&secret=secret-key
 ```
 
 ## Update the source
@@ -271,7 +271,7 @@ You can change the data internally when using external sources. However, there a
 
 In order to invalidate the cache and trigger alerts, you have to use the external source updating endpoint:
 
- - [https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_external_source_update](https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_external_source_update)
+ - [https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_external_source_update](https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_external_source_update)
 
 Calling this endpoint will invalidate the cache and trigger alerts using the instances you provided in the request.
 

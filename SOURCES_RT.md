@@ -39,7 +39,7 @@ We provide an HTTP API to do the same function as publishing messages via MQTT.
 
 Check the documentation here (documented with Swagger):
 
-- [https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__real_time_push](https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__real_time_push)
+- [https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__real_time_push](https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__real_time_push)
 
 
 ## Clearing data

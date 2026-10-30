@@ -1,6 +1,6 @@
 # Custom visualizations
 
-Deep intelligence provides custom visualizations as a tool to integrate custom and specific visualizations. 
+AIR-Core provides custom visualizations as a tool to integrate custom and specific visualizations. 
 
 Custom visualizations load inside iframes, allowing them to load the required data in order to render the visualizations.
 
@@ -8,10 +8,10 @@ Remember custom visualization are slower than regular visualization, as they req
 
 You can create your own custom visualization in a single `.html` file and host it using any static web hosting service, like, for example, [GitHub Pages](https://pages.github.com/)
 
-In order for your custom visualization to work, you need to import the script we provide below `custom-view.js`. That script reads the parameters given by Deep Intelligence and loads the required data for the visualization. 
+In order for your custom visualization to work, you need to import the script we provide below `custom-view.js`. That script reads the parameters given by AIR-Core and loads the required data for the visualization. 
 
 ```html
-<script type="text/javascript" src="https://app.deepint.net/static/js/custom-view.js"></script>
+<script type="text/javascript" src="https://app.air-core.io/static/js/custom-view.js"></script>
 ```
 
 You also need to call the script in order to get the data before you render anything. See an example below:
@@ -107,7 +107,7 @@ For real time data sources, when enabling the real time feature, you can receive
 
 In order to receive them, register an event listener for the `message` events and filter them by origin and type.
 
-The real time messages are objects received from the origin `https://app.deepint.net` and with a property `type` with the value `real-time-data`. The actual instances are stored in the property `data`.
+The real time messages are objects received from the origin of the instance (`https://app.air-core.io`, or `https://app.deepint.net` for dashboards still opened on the former domain) and with a property `type` with the value `real-time-data`. The actual instances are stored in the property `data`.
 
 Example message: 
 
@@ -127,9 +127,13 @@ Note: The instances are not projected, you will receive all the data source fiel
 Example of event listener:
 
 ```js
+// Instances allowed to send messages to the view. app.deepint.net is the former domain of AIR-Core,
+// kept while dashboards are still opened there.
+const ALLOWED_ORIGINS = ["https://app.air-core.io", "https://app.deepint.net"];
+
 window.addEventListener("message", (event) => {
-    if (event.origin !== "https://app.deepint.net") {
-        return; // Not from Deep Intelligence
+    if (!ALLOWED_ORIGINS.includes(event.origin)) {
+        return; // Not from AIR-Core
     }
 
     const message = event.data;

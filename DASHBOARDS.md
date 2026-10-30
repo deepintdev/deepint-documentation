@@ -2,8 +2,8 @@
 
 Dashboards data is stored as JSON, and can be changed using the API:
 
- - [Dashboard creation](https://app.deepint.net/api/v1/documentation/#/dashboards/post_api_v1_workspace__workspaceId__dashboards)
- - [Dashboard update](https://app.deepint.net/api/v1/documentation/#/dashboards/post_api_v1_workspace__workspaceId__dashboard__dashboardId_)
+ - [Dashboard creation](https://app.air-core.io/api/v1/documentation/#/dashboards/post_api_v1_workspace__workspaceId__dashboards)
+ - [Dashboard update](https://app.air-core.io/api/v1/documentation/#/dashboards/post_api_v1_workspace__workspaceId__dashboard__dashboardId_)
 
 Dashboards have the following root properties:
 

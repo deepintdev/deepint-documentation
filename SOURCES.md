@@ -1,6 +1,6 @@
 # Data sources
 
-Deep Intelligence data sources are collections of rows used to manage your data, in order to represent it with visualizations or train models with it.
+AIR-Core data sources are collections of rows used to manage your data, in order to represent it with visualizations or train models with it.
 
 Data sources can be imported from files, URLs, databases and other services. You can check the available options in the source creation menu.
 
@@ -33,15 +33,15 @@ When doing it, the system will automatically create tasks to fetch the new versi
 
 ## Updating via API
 
-The preferred method for updating your sources is using the API, since it's the most secure way of automatically transferring your data to Deep Intelligence.
+The preferred method for updating your sources is using the API, since it's the most secure way of automatically transferring your data to AIR-Core.
 
 You can update any source by using the instances API:
 
- - [https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__instances](https://app.deepint.net/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__instances)
+ - [https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__instances](https://app.air-core.io/api/v1/documentation/#/sources/post_api_v1_workspace__workspaceId__source__sourceId__instances)
 
 ## API filtering
 
-When using the API sometimes you are required to input a filter in JSON format, this filter format is used by deep intelligence to filter the data source rows.
+When using the API sometimes you are required to input a filter in JSON format, this filter format is used by AIR-Core to filter the data source rows.
 
 A data filter is a tree of nodes, each node can be a group of conditions or a single condition.
 
