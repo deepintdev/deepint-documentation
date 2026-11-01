@@ -1,6 +1,6 @@
 # AIR-Core documentation
 
-AIR-Core was formerly called Deep Intelligence (deepint.net).
+AIR-Core is the data and AI platform maintained by [AIR Institute](https://air-institute.com), available at [app.air-core.io](https://app.air-core.io).
 
 This repository contains development documentation for AIR-Core. Check the section below for the list of documented topics.
 
